@@ -19,28 +19,31 @@ int main() {
   cout << x << op << y << " = "; 
   switch(op) {
     case '+':
-      
+      cout << x+y;
     break;
     case '-':
-
+      cout << x-y;
     break;
     case '*':
-
+      cout << x*y;
     break;
     case '/':
-      
+      cout << x/y;
     break;
     case '%':
-
+      cout << x%y;
     break;
     case '&':
-
+      cout << (x&y);
     break;
     case '|':
-
+      cout << (x|y);
     break;
     case '^':
-    
+      cout << (x^y);
+      gotoxy(3,14);
+      cout << "Note: this is bitwise XOR, not power"
     break;
   }
+  gotoxy(0,18);
 } 
