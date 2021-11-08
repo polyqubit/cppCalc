@@ -1,6 +1,7 @@
 #include <iostream>
 #include "poole.h"
 #include <string>
+#include <bitset>
 using namespace std;
 
 int main() {
@@ -34,19 +35,14 @@ int main() {
       cout << x%y;
     break;
     case '&':
-      gotoxy(3,13);
-      cout << "                                               ";
-      gotoxy(3,12);
-      cout << x << op << y << (x&y); 
-      gotoxy(3,14);
-      
+      bad(x,y,(x&y),op);
     break;
     case '|':
-      cout << (x|y);
+      bad(x,y,(x|y),op);
     break;
     case '^':
-      cout << (x^y);
-      gotoxy(3,14);
+      bad(x,y,(x^y),op);
+      gotoxy(1,17);
       cout << "Note: this is bitwise XOR, not power";
     break;
   }
