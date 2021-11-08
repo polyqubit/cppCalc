@@ -42,7 +42,7 @@ int main() {
     case '^':
       cout << (x^y);
       gotoxy(3,14);
-      cout << "Note: this is bitwise XOR, not power"
+      cout << "Note: this is bitwise XOR, not power";
     break;
   }
   gotoxy(0,18);
