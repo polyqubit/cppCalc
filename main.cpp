@@ -34,7 +34,12 @@ int main() {
       cout << x%y;
     break;
     case '&':
-      cout << (x&y);
+      gotoxy(3,13);
+      cout << "                                               ";
+      gotoxy(3,12);
+      cout << x << op << y << (x&y); 
+      gotoxy(3,14);
+      
     break;
     case '|':
       cout << (x|y);
